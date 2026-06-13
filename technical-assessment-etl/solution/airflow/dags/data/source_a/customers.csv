@@ -1,0 +1,26 @@
+customer_id,first_name,last_name,email,phone,address,city,country,registration_date,tax_id,is_active,credit_limit
+C001,Michael,Smith,michael.smith@email.com,+1-555-0101,123 Main St,New York,USA,2023-01-15,TX-001,1,5000.00
+C002,Sarah,Johnson,sarah.j@email.com,+1-555-0102,456 Oak Ave,Los Angeles,USA,2023-02-20,TX-002,1,7500.00
+C003,Robert,Williams,robert.w@email.com,+1-555-0103,789 Pine Rd,Chicago,USA,2023-03-10,TX-003,1,3000.00
+C004,Emily,Davis,emily.davis@email.com,+1-555-0104,321 Elm St,Houston,USA,2023-03-22,TX-004,1,4200.00
+C005,James, Brown ,james.brown@email.com,+1-555-0105, 654 Maple Dr ,Phoenix,USA,2023-04-05,TX-005,0,6000.00
+C006,Patricia,Wilson,patricia.w@email.com,+1-555-0106,987 Cedar Ln,Philadelphia,USA,2023-04-18,TX-006,1,8500.00
+C007,Thomas,Moore,thomas.moore@email.com,+1-555-0107,147 Birch St,San Antonio,USA,2023-05-01,TX-007,1,2000.00
+C008,Jennifer,Taylor,,+1-555-0108,258 Spruce Ave,San Diego,USA,2023-05-14,TX-008,1,5500.00
+C009,William,Anderson,william.a@email.com,+1-555-0109,369 Willow Rd,Dallas,USA,2023-06-03,TX-009,1,4800.00
+C010,Linda,Thomas,linda.t@email.com,+1-555-0110,147 Aspen Ct,San Jose,USA,2023-06-19,TX-010,0,9200.00
+C011,Daniel,Jackson,daniel.j@email.com,+1-555-0111,753 Cypress Dr,Austin,USA,2023-07-07,TX-011,1,3100.00
+C012, Nancy ,White,nancy.w@email.com,+1-555-0112,951 Palm Blvd,Jacksonville,USA,2023-07-22,TX-012,1,6700.00
+C013,Charles,Harris,charles.h@email.com,+1-555-0113,357 Redwood St,Fort Worth,USA,2023-08-01,TX-013,1,4400.00
+C014,Sandra,Martin,sandra.m@email.com,+1-555-0114,846 Dogwood Ave,Columbus,USA,2023-08-14,TX-014,1,7200.00
+C015,Joseph,Thompson,,+1-555-0115,159 Magnolia Ln,Charlotte,USA,2023-09-02,TX-015,1,3800.00
+C016,Barbara,Garcia,barbara.g@email.com,+1-555-0116,753 Hickory Dr,Indianapolis,USA,2023-09-17,TX-016,1,5100.00
+C017,Kevin,Martinez,kevin.m@email.com,+1-555-0117,258 Sycamore St,San Francisco,USA,2023-10-05,TX-017,1,6300.00
+C018,Laura,Robinson,laura.r@email.com,+1-555-0118,147 Poplar Ave,Seattle,USA,2023-10-20,TX-018,1,2900.00
+C019,Steven,Clark,steven.c@email.com,+1-555-0119,369 Beech Rd,Denver,USA,2023-11-03,TX-019,0,8100.00
+C020,Amanda,Rodriguez,amanda.r@email.com,+1-555-0120,852 Walnut Ct,Washington,USA,2023-11-16,TX-020,1,4600.00
+C021,David,Lewis,david.l@email.com,+1-555-0121,654 Alder Dr,Boston,USA,2023-12-01,TX-021,1,5800.00
+C022,Susan,Lee,,+1-555-0122,357 Chestnut Ln,Nashville,USA,2023-12-12,TX-022,1,3400.00
+C023,Richard,Walker,richard.w@email.com,+1-555-0123,951 Fir St,Portland,USA,2023-12-20,TX-023,1,7100.00
+C024,Maria,Hall,maria.h@email.com,+1-555-0124,159 Holly Ave,Las Vegas,USA,2024-01-05,TX-024,1,5200.00
+C025, Jason ,Allen,jason.a@email.com,+1-555-0125,753 Laurel Dr,Atlanta,USA,2024-01-18,TX-025,1,3900.00

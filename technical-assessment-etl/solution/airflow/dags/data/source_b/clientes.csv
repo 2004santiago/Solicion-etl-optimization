@@ -1,0 +1,26 @@
+IdCliente,NombreCompleto,CorreoElectronico,Telefono,Direccion,Ciudad,Pais,FechaRegistro,RFC,Activo,LimiteCredito,TipoCliente
+B001,Carlos Mendoza,carlos.mendoza@correo.com,+52-555-1001,Av. Reforma 123,Ciudad de Mexico,Mexico,15/01/2023,RFC-B001,1,45000.00,PREMIUM
+B002,Ana Gutierrez,ana.gutierrez@correo.com,+52-555-1002,Calle Juarez 456,Guadalajara,Mexico,20/02/2023,RFC-B002,1,62000.00,REGULAR
+B003, Roberto  Nuñez ,roberto.nunez@correo.com,+52-555-1003, Blvd. Hidalgo 789,Monterrey,Mexico,10/03/2023,TX-003,1,28000.00,REGULAR
+B004,Maria Fernandez,maria.fernandez@correo.com,+52-555-1004,Circuito Centro 321,Puebla,Mexico,22/03/2023,RFC-B004,1,38000.00,PREMIUM
+B005,Jose  Lopez,jose.lopez@correo.com,+52-555-1005,  Calle Norte 654 ,Tijuana,Mexico,05/04/2023,RFC-B005,0,51000.00,REGULAR
+B006,Isabel Ramirez,isabel.ramirez@correo.com,+52-555-1006,Av. Central 987,Leon,Mexico,18/04/2023,RFC-B006,1,72000.00,PREMIUM
+B007,Francisco  Torres,francisco.torres@correo.com,+52-555-1007, Blvd. Sur 147,Merida,Mexico,01/05/2023,TX-007,1,19000.00,REGULAR
+B008,Sofia Vargas,sofia.vargas@correo.com,+52-555-1008,Calle Este 258,Queretaro,Mexico,14/05/2023,RFC-B008,1,48000.00,REGULAR
+B009,Arturo Rojas,arturo.rojas@correo.com,+34-555-1009, Gran Via 42,Madrid,España,03/06/2023,RFC-B009,1,54000.00,PREMIUM
+B010,  Lucia Herrera,,+52-555-1010,Av. Poniente 160,San Luis Potosi,Mexico,19/06/2023,RFC-B010,1,36000.00,REGULAR
+B011,Sergio Delgado,sergio.delgado@correo.com,+52-555-1011,Privada Norte 753,Aguascalientes,Mexico,07/07/2023,RFC-B011,1,29000.00,REGULAR
+B012,Monica  Ponce,monica.ponce@correo.com,+52-555-1012,Calle Diamante 951,Torreon,Mexico,22/07/2023,RFC-B012,1,66000.00,PREMIUM
+B013,Gabriel Campos,gabriel.campos@correo.com,+52-555-1013,Av. Universidad 357,Chihuahua,Mexico,01/08/2023,RFC-B013,1,41000.00,REGULAR
+B014,Adriana  Mejia,adriana.mejia@correo.com,+52-555-1014, Blvd. Aeropuerto 846,Morelia,Mexico,14/08/2023,RFC-B014,1,73000.00,PREMIUM
+B015,Felipe  Orozco,felipe.orozco@correo.com,+52-555-1015,Calle Jardin 159,Culiacan,Mexico,02/09/2023,RFC-B015,1,35000.00,REGULAR
+B016,Veronica  Padilla,veronica.padilla@correo.com,+52-555-1016,Av. Libertad 753,Acapulco,Mexico,17/09/2023,RFC-B016,1,52000.00,REGULAR
+B017,Victor  Salazar,victor.salazar@correo.com,+52-555-1017,Calle Mina 258,Durango,Mexico,05/10/2023,RFC-B017,1,61000.00,PREMIUM
+B018,Carmen  Rivas,carmen.rivas@correo.com,+52-555-1018,Av. Sol 147,Hermosillo,Mexico,20/10/2023,RFC-B018,1,27000.00,REGULAR
+B019,Oscar  Medina,oscar.medina@correo.com,+52-555-1019,Paseo Vereda 369,Saltillo,Mexico,03/11/2023,RFC-B019,0,80000.00,PREMIUM
+B020,  Patricia  Luna ,,+52-555-1020, Calle Luna 852,Zacatecas,Mexico,16/11/2023,RFC-B020,1,44000.00,REGULAR
+B021,Ricardo  Aguilar,ricardo.aguilar@correo.com,+52-555-1021,Av. Rayo 654,Cancun,Mexico,01/12/2023,RFC-B021,1,57000.00,PREMIUM
+B022,Marisol  Cardenas,,+52-555-1022,Boulevard Mar 357,Mazatlan,Mexico,12/12/2023,RFC-B022,1,32000.00,REGULAR
+B023,Jorge  Esquivel,jorge.esquivel@correo.com,+52-555-1023,Calle Pino 951,Veracruz,Mexico,20/12/2023,RFC-B023,1,69000.00,PREMIUM
+B024,Teresa  Vallejo,teresa.vallejo@correo.com,+52-555-1024,Av. Concordia 159, Toluca ,Mexico,05/01/2024,RFC-B024,1,50000.00,REGULAR
+B025,  Esteban  Figueroa ,esteban.figueroa@correo.com,+52-555-1025,Calle Horizonte 753,Villahermosa,Mexico,18/01/2024,RFC-B025,1,37000.00,REGULAR

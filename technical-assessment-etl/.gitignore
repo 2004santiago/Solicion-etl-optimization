@@ -1,20 +1,39 @@
-solution/*.*
-sqlserver_data/*
-.venv
+# Python
+.venv/
 .env
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Project Specific
-airflow.db
+# SQL Server local volume
+sqlserver_data/
+
+# Airflow runtime files
 logs/
-airflow/logs/
-airflow/airflow.db
-airflow/*.pid
-airflow/*.cfg
-airflow/*.err
-airflow/*.log
-airflow/plugins/
-output
+output/
+airflow.db
+*.pid
+*.err
+*.log
 
+solution/airflow/logs/
+solution/airflow/airflow.db
+solution/airflow/airflow-webserver.pid
+solution/airflow/*.pid
+solution/airflow/*.err
+solution/airflow/*.log
+solution/airflow/plugins/
+solution/airflow/.env
+solution/airflow/output/
+solution/airflow/config/airflow.cfg
+solution/airflow/.airflowignore
 
-# Raw data files (large datasets, do not upload to GitHub)
+# Runtime/caches inside solution
+solution/**/__pycache__/
+solution/**/*.py[cod]
+
+# Keep documentation visible even if it lives directly under solution
+!solution/*.md
+
+# Raw data files outside the provided assessment data
 Data RAW/

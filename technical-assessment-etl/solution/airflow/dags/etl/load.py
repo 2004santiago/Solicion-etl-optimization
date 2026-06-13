@@ -57,6 +57,7 @@ def load_full_refresh(settings: Settings, manifest: dict[str, str]) -> dict[str,
 
     counts: dict[str, int] = {}
     with engine.begin() as conn:
+        # Full refresh: clear child tables first so FK constraints stay valid.
         for table in DELETE_ORDER:
             conn.execute(text(f"DELETE FROM etl.{table}"))
 
@@ -79,6 +80,7 @@ def load_full_refresh(settings: Settings, manifest: dict[str, str]) -> dict[str,
             )
         counts["Invoices"] = _load_df(conn, invoices, "Invoices")
 
+        # Facts keep source codes during transformation; surrogate keys are resolved after dimensions load.
         invoice_map = _identity_map(conn, "Invoices", "invoice_id")
         product_map = _identity_map(conn, "Products", "product_id")
 

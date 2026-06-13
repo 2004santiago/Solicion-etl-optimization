@@ -12,12 +12,14 @@ from etl.config import Settings
 def make_engine(settings: Settings) -> Engine:
     host = settings.sqlserver_host
     if host == "sqlserver":
+        # Airflow and SQL Server run in different Compose projects in this setup.
         host = "host.docker.internal"
 
     if importlib.util.find_spec("pymssql") is not None:
         password = quote_plus(settings.sqlserver_password)
         url = f"mssql+pymssql://{settings.sqlserver_user}:{password}@{host}:{settings.sqlserver_port}/{settings.sqlserver_db}"
     else:
+        # The official Airflow image used here already includes pyodbc and ODBC Driver 18.
         odbc = (
             "DRIVER={ODBC Driver 18 for SQL Server};"
             f"SERVER={host},{settings.sqlserver_port};"

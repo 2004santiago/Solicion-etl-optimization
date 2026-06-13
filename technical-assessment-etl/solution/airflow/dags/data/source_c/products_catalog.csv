@@ -1,0 +1,21 @@
+product_code,name,category,price,supplier_code,description,active,uom
+CAT-C001,Teclado Mecanico RGB,Electronics,"$89.99",CSP-001,Teclado mecanico switches blue RGB retroiluminado,1,UNIT
+CAT-C002,Hub USB 7 Puertos,Electronics,"$34.50",CSP-001,Hub USB 3.0 7 puertos con alimentacion externa,1,UNIT
+CAT-C003,Tinta Impresora Negra,Office Supplies,"$22.00",CSP-002,Tinta para impresora negra 100ml compatible,1,UNIT
+CAT-C004,Archivador Metalico 4 Gavetas,Furniture,"$180.00",CSP-003,Archivador metalico 4 gavetas con llave,1,UNIT
+CAT-C005, Cable HDMI 5m ,Electronics,"$15.99",CSP-001,Cable HDMI 2.1 5 metros trenzado,1,UNIT
+CAT-C006,Calculadora Cientifica,Electronics,"$42.50",CSP-004,Calculadora cientifica 240 funciones,1,UNIT
+CAT-C007,Cortadora de Papel Industrial,Office Supplies,"$320.00",CSP-005,Cortadora de papel industrial A3,1,UNIT
+CAT-C008,Silla de Visita Ergonómica,Furniture,"$210.00",CSP-003,Silla de visita ergonomica tapizada,1,UNIT
+CAT-C009,Cafetera Industrial 2L,Kitchen,"$145.00",CSP-006,Cafetera industrial acero inoxidable 2 litros,1,UNIT
+CAT-C010,Bateria Recargable AA 4pk,Electronics,"$12.99",CSP-001,Baterias recargables AA 2500mAh 4 piezas,1,PACK
+CAT-C011,Pizarron Blanco 120x90,Office Supplies,"$55.00",CSP-002,Pizarron blanco magnetico 120x90cm,1,UNIT
+CAT-C012,Ventilador de Piso Industrial,Appliances,"$95.00",CSP-007,Ventilador de piso industrial 3 velocidades,1,UNIT
+CAT-C013,Cinta de Embalaje 48x150,Office Supplies,"$8.50",CSP-005,Cinta de embalaje transparente 48mm x 150m,1,ROLL
+CAT-C014,Bocina Bluetooth Portatil,Electronics,"$76.00",CSP-008,Bocina bluetooth portatil 20W resistente agua,1,UNIT
+CAT-C015,Organizador de Escritorio,Office Supplies,"$28.00",CSP-002,Organizador de escritorio madera 5 compartimentos,1,UNIT
+CAT-C016,Microondas Industrial 40L,Appliances,"$380.00",CSP-009,Microondas industrial 40 litros 1800W,1,UNIT
+CAT-C017,   Grapadora Industrial   ,Office Supplies,"$45.00",,Grapadora industrial capacidad 210 grapas,1,UNIT
+CAT-C018,Router WiFi 6 Dual Band,Electronics,"$129.99",CSP-004,Router WiFi 6 AX3000 dual band,0,UNIT
+CAT-C019,Papel Higienico Industrial 24pk,Janitorial,"$18.00",CSP-010,Papel higienico industrial 24 rollos doble hoja,1,PACK
+CAT-C020,Jabon Liquido 5L,Janitorial,"$35.00",CSP-010,Jabon liquido para manos 5 litros neutro,1,UNIT

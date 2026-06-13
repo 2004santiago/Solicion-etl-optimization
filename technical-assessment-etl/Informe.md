@@ -270,3 +270,31 @@ UNION ALL SELECT 'Invoices', COUNT(*) FROM etl.Invoices
 UNION ALL SELECT 'InvoiceLines', COUNT(*) FROM etl.InvoiceLines
 UNION ALL SELECT 'Payments', COUNT(*) FROM etl.Payments;
 ```
+
+### Evidencias visuales
+
+Las siguientes imagenes se encuentran en la carpeta `img/` y documentan la ejecucion del pipeline y la carga en las tablas destino:
+
+| Evidencia | Archivo |
+| --- | --- |
+| Airflow UI con el DAG de la solucion | `img/Airflow UI.png` |
+| Registros cargados en `etl.Customers` | `img/Customers.png` |
+| Registros cargados en `etl.Suppliers` | `img/Suppliers.png` |
+| Registros cargados en `etl.Products` | `img/Products.png` |
+| Registros cargados en `etl.Invoices` | `img/Invoices.png` |
+| Registros cargados en `etl.InvoiceLines` | `img/InvoceLines.png` |
+| Registros cargados en `etl.Payments` | `img/Payments.png` |
+
+![Airflow UI](img/Airflow%20UI.png)
+
+![Customers](img/Customers.png)
+
+![Suppliers](img/Suppliers.png)
+
+![Products](img/Products.png)
+
+![Invoices](img/Invoices.png)
+
+![InvoiceLines](img/InvoceLines.png)
+
+![Payments](img/Payments.png)

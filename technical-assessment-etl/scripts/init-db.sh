@@ -25,6 +25,17 @@ echo "Ensuring database [$DB_NAME] exists..."
   -S localhost -U sa -P "$SA_PASSWORD" -C \
   -Q "IF DB_ID('$DB_NAME') IS NULL CREATE DATABASE [$DB_NAME]"
 
+for i in $(seq 1 $RETRIES); do
+  if /opt/mssql-tools18/bin/sqlcmd \
+    -S localhost -U sa -P "$SA_PASSWORD" -C \
+    -d "$DB_NAME" \
+    -Q "SELECT 1" > /dev/null 2>&1; then
+    break
+  fi
+  echo "Waiting for database [$DB_NAME] to accept connections... ($i/$RETRIES)"
+  sleep 2
+done
+
 SCHEMA_COUNT=$(/opt/mssql-tools18/bin/sqlcmd \
   -S localhost -U sa -P "$SA_PASSWORD" -C \
   -d "$DB_NAME" \

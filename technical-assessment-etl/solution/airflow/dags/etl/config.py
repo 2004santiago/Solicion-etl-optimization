@@ -18,6 +18,7 @@ class Settings:
     @classmethod
     def from_env(cls) -> "Settings":
         airflow_home = Path(os.getenv("AIRFLOW_HOME", "/opt/airflow"))
+        # La ruta de datos puede venir por variable de entorno o por los montajes Docker del proyecto.
         candidate_data_dirs = [
             airflow_home / "data",
             airflow_home / "data_raw",
@@ -36,4 +37,5 @@ class Settings:
 
     @property
     def transformed_dir(self) -> Path:
+        # Los conjuntos de datos intermedios quedan separados de los reportes de calidad.
         return self.output_dir / "transformed"

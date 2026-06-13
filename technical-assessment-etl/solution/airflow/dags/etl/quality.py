@@ -22,6 +22,7 @@ class QualityEvent:
 class QualityReport:
     def __init__(self) -> None:
         self.events: list[QualityEvent] = []
+        # Decisiones de negocio que justifican tratamientos no triviales del pipeline.
         self.decisions: list[dict[str, str]] = [
             {
                 "topic": "Duplicados entre fuentes",
@@ -66,6 +67,7 @@ class QualityReport:
         events = [asdict(event) for event in self.events]
         csv_path = output_dir / "quality_report.csv"
         json_path = output_dir / "quality_report.json"
+        # El CSV queda como bitacora detallada y el JSON como resumen consumible por documentacion e informes.
         pd.DataFrame(events).to_csv(csv_path, index=False, encoding="utf-8")
         summary = {
             "totals_by_action": pd.DataFrame(events).groupby("action").size().to_dict() if events else {},

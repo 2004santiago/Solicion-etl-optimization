@@ -17,12 +17,14 @@ DATE_DEFAULT = pd.Timestamp("1900-01-01").date()
 def _clean_text(value: object) -> str:
     if pd.isna(value):
         return ""
+    # Tolerancia media: se normalizan espacios sin rechazar el registro.
     return " ".join(str(value).strip().split())
 
 
 def _required_text(value: object, table: str, field: str, source: str, source_id: object, report: QualityReport) -> str:
     cleaned = _clean_text(value)
     if not cleaned:
+        # Tolerancia alta: textos obligatorios vacios se cargan con valor por defecto trazable.
         report.add(table, source, source_id, "default_applied", "Texto obligatorio vacio", field, value, TEXT_DEFAULT)
         return TEXT_DEFAULT
     if cleaned != str(value):
@@ -40,6 +42,7 @@ def _optional_text(value: object, table: str, field: str, source: str, source_id
 def _email(value: object, table: str, source: str, source_id: object, report: QualityReport) -> str:
     cleaned = _clean_text(value).lower()
     if not cleaned:
+        # Tolerancia alta: el correo sustituto permite cargar el registro sin ocultar el hallazgo.
         report.add(table, source, source_id, "default_applied", "Email vacio", "email", value, EMAIL_DEFAULT)
         return EMAIL_DEFAULT
     return cleaned
@@ -49,6 +52,7 @@ def _date(value: object, fmt: str | None, table: str, field: str, source: str, s
     cleaned = _clean_text(value)
     if not cleaned:
         if required:
+            # Tolerancia alta: fechas requeridas nulas se reemplazan por la fecha centinela documentada.
             report.add(table, source, source_id, "default_applied", "Fecha vacia", field, value, DATE_DEFAULT)
             return DATE_DEFAULT
         return None
@@ -64,6 +68,7 @@ def _date(value: object, fmt: str | None, table: str, field: str, source: str, s
 
 def _decimal(value: object, source: str, table: str, field: str, source_id: object, report: QualityReport, default: str = "0") -> Decimal:
     raw = _clean_text(value)
+    # Tolerancia media: cada fuente trae convenciones numericas distintas y se estandarizan a Decimal.
     if source == "SOURCE_B":
         raw = raw.replace(".", "").replace(",", ".") if "," in raw else raw
     raw = raw.replace("$", "").replace(",", "").strip()
@@ -86,6 +91,7 @@ def _split_name(full_name: str) -> tuple[str, str]:
 def _exclude_missing_id(df: pd.DataFrame, id_col: str, table: str, source: str, report: QualityReport) -> pd.DataFrame:
     mask = df[id_col].map(_clean_text).eq("")
     for _, row in df[mask].iterrows():
+        # Tolerancia cero: sin ID de origen no hay trazabilidad ni carga segura.
         report.add(table, source, row.get(id_col, ""), "excluded", "Registro sin ID de origen", id_col)
     return df[~mask].copy()
 
@@ -176,6 +182,7 @@ def _invoices(settings: Settings, customers: pd.DataFrame, report: QualityReport
         for _, r in df.iterrows():
             sid, customer_code = _clean_text(r[id_col]), _clean_text(r[customer_col])
             if (source, customer_code) not in valid_customers:
+                # Tolerancia cero: facturas con cliente inexistente violan integridad referencial.
                 report.add("Invoices", source, sid, "excluded", "Factura con cliente inexistente", "customer_code", customer_code)
                 continue
             total = _decimal(r["Total" if source == "SOURCE_B" else "total_amount"], source, "Invoices", "total_amount", sid, report)
@@ -199,6 +206,7 @@ def _invoice_lines(settings: Settings, invoices: pd.DataFrame, report: QualityRe
         for _, r in df.iterrows():
             sid, invoice_code = _clean_text(r[id_col]), _clean_text(r[invoice_col])
             if (source, invoice_code) not in valid_invoices:
+                # Tolerancia cero: las lineas dependen de una factura valida ya aceptada.
                 report.add("InvoiceLines", source, sid, "excluded", "Linea con factura inexistente", "invoice_code", invoice_code)
                 continue
             rows.append({
@@ -223,6 +231,7 @@ def _payments(settings: Settings, invoices: pd.DataFrame, report: QualityReport)
             sid, invoice_code = _clean_text(r[id_col]), _clean_text(r[invoice_col])
             invoice_key = (source, invoice_code)
             if invoice_key not in valid_invoices:
+                # Tolerancia cero: no se cargan pagos para facturas inexistentes o excluidas.
                 report.add("Payments", source, sid, "excluded", "Pago con factura inexistente", "invoice_code", invoice_code)
                 continue
             amount = _decimal(r["Monto" if source == "SOURCE_B" else "amount"], source, "Payments", "amount", sid, report)
@@ -231,11 +240,13 @@ def _payments(settings: Settings, invoices: pd.DataFrame, report: QualityReport)
             reference = _clean_text(r["Referencia" if source == "SOURCE_B" else "reference_number"])
             dupe_key = (source, invoice_code, str(payment_date), amount, method, reference)
             if dupe_key in seen:
+                # Criterio candidato: se deduplican pagos solo con coincidencia exacta de llave de negocio.
                 report.add("Payments", source, sid, "excluded", "Pago duplicado exacto", "dedupe_key", dupe_key)
                 continue
             seen.add(dupe_key)
             cumulative = paid.get(invoice_key, Decimal("0")) + amount
             if cumulative > invoice_totals[invoice_key]:
+                # Tolerancia cero: el acumulado pagado no puede superar el total de la factura.
                 report.add("Payments", source, sid, "excluded", "Pago excede el total acumulado de la factura", "amount", amount)
                 continue
             paid[invoice_key] = cumulative
@@ -251,6 +262,7 @@ def build_transformed_dataset(settings: Settings) -> dict[str, str]:
     report = QualityReport()
     settings.transformed_dir.mkdir(parents=True, exist_ok=True)
     frames = {}
+    # Orden funcional: dimensiones primero, luego hechos que dependen de esas llaves de negocio.
     frames["customers"] = _customers(settings, report)
     frames["suppliers"] = _suppliers(settings, report)
     frames["products"] = _products(settings, report)

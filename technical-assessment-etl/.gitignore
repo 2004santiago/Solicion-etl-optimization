@@ -1,7 +1,7 @@
 # Python
 .venv/
 .env
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -37,3 +37,5 @@ solution/**/*.py[cod]
 
 # Raw data files outside the provided assessment data
 Data RAW/
+
+img

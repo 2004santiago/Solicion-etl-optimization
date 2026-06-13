@@ -1,0 +1,21 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: etl_sqlserver
+    hostname: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${SA_PASSWORD:-P@ssw0rd2025!}"
+      SA_PASSWORD: "${SA_PASSWORD:-P@ssw0rd2025!}"
+      MSSQL_PID: "Developer"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./scripts/init-db.sh:/usr/local/bin/init-db.sh:ro
+      - ./sql/target_schema.sql:/schemas/target_schema.sql:ro
+    command: /bin/bash /usr/local/bin/init-db.sh
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:

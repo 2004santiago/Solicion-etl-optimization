@@ -1,0 +1,21 @@
+IdProveedor,RazonSocial,NombreContacto,Correo,Telefono,DireccionCompleta,Ciudad,Pais,NIT,TerminosPago,Activo,Categoria
+P001,ElectroPartes del Sur,Alberto Suarez,asuarez@electropartes.com,+52-555-2001,Av. Industrial 100,Monterrey,Mexico,NIT-P001,NET30,1,Electronica
+P002,Materias Primas del Bajio,Claudia Ochoa,cochoa@materiasprimas.com,+52-555-2002,Calle Mina 200,Leon,Mexico,NIT-P002,NET45,1,Mineria
+P003,Distribuidora Ruedas SA,Oscar Fletes,ofletes@ruedassa.com,+52-555-2003, Blvd. Transporte 300,Guadalajara,Mexico,NIT-P003,NET30,1,Automotriz
+P004,El Buen Condimento,Maria Espejo,mespejo@buencond.com,+52-555-2004,Calle Sabor 400,Merida,Mexico,NIT-P004,NET15,1,Alimentos
+P005,Logistica Intermodal MX,Roberto Andrade,randrade@intermodal.com,+52-555-2005,Circuito Aeropuerto 500,Ciudad de Mexico,Mexico,NIT-P005,NET60,1,Transporte
+P006,Tecnología Creativa SA,Sofia Linares,slinares@tecnocreativa.com,+52-555-2006,Av. Innovación 600,Queretaro,Mexico,NIT-P006,NET30,1,Tecnologia
+P007,   Vidrios y Cristales del Norte ,Hector Zamora,,+52-555-2007,Calle Transparencia 700,Chihuahua,Mexico,NIT-P007,NET45,0,Vidrio
+P008,Ceramica Artistica de Puebla,Fernanda Tapia,ftapia@ceramicaart.com,+52-555-2008, Blvd. Artesanal 800,Puebla,Mexico,NIT-P008,NET30,1,Ceramica
+P009, Seguridad Total Equipos ,Raul Solis,rsolis@seguridadt.com,+52-555-2009,Av. Proteccion 900,Tijuana,Mexico,NIT-P009,NET30,1,Seguridad
+P010,Algodon y Lino Textil,Mariana Duarte,mduarte@textilsur.com,+52-555-2010,Calle Telar 1000,Oaxaca,Mexico,NIT-P010,NET30,1,Textil
+P011, Herramientas Especializadas ,Gustavo Paredes,gparedes@herraesp.com,+52-555-2011,Av. Maquina 1100,San Luis Potosi,Mexico,NIT-P011,NET60,1,Metalurgica
+P012,Vinos y Destilados Premium,Patricia Fonseca,pfonseca@vinospremium.com,+52-555-2012,Calle Bodega 1200,Ensenada,Mexico,NIT-P012,NET30,1,Bebidas
+P013,Construrama del Centro,Cesar Madrigal,,+52-555-2013, Blvd. Obra 1300,Aguascalientes,Mexico,NIT-P013,NET30,1,Construccion
+P014,Metal Mecanica del Norte,Alejandra Escobedo,aescobedo@metalmec.com,+52-555-2014,Av. Fundicion 1400,Saltillo,Mexico,NIT-P014,NET90,1,Siderurgica
+P015,Plastiexpress SA,Julian Rosales,jrosales@plastiexpress.com,+52-555-2015,Calle Plastico 1500,Toluca,Mexico,NIT-P015,NET30,1,Plasticos
+P016,Impermeabilizantes y Mas,Laura Espinoza,lespinoza@impermas.com,+52-555-2016,Av. Seco 1600,Veracruz,Mexico,NIT-P016,NET45,1,Quimicos
+P017,Embotelladora del Pacifico,Martin Delgado,mdelgado@embopacifico.com,+52-555-2017, Blvd. Refresco 1700,Mazatlan,Mexico,NIT-P017,NET15,1,Bebidas
+P018,Distribuidora Medica Maya,Natalia Osorio,nosorio@medicamaya.com,+52-555-2018,Calle Salud 1800,Cancun,Mexico,NIT-P018,NET30,1,Medica
+P019,   Farmaceutica Nacional   ,Hugo Cardenas,hcardenas@farmanacional.com,+52-555-2019,Paseo Quimico 1900,Ciudad de Mexico,Mexico,NIT-P019,NET45,1,Farmaceutica
+P020,Refrigeracion Tropical,Diana Merida,dmerida@refritropical.com,+52-555-2020,Av. Fresca 2000,Merida,Mexico,NIT-P020,NET30,1,Climatizacion

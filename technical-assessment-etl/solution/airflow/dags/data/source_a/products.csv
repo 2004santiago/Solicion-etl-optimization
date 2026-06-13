@@ -1,0 +1,26 @@
+product_id,product_name,category,unit_price,supplier_id,sku,description,is_active,created_date
+P001,Wireless Mouse,Electronics,25.99,S001,SKU-WM-001,Ergonomic wireless mouse with USB receiver,1,2022-06-15
+P002,USB-C Cable 2m,Electronics,12.50,S004,SKU-UC-002,USB-C to USB-C braided cable 2 meters,1,2022-07-01
+P003,A4 Paper Ream 500,Office Supplies,5.75,S008,SKU-PA-003,Premium A4 paper 80gsm 500 sheets,1,2022-05-20
+P004,Standing Desk Frame,Furniture,349.99,S015,SKU-SD-004,Adjustable height standing desk frame,1,2022-08-10
+P005,LED Monitor 27",Electronics,289.00,S006,SKU-LM-005,27-inch 4K LED monitor with HDMI,1,2022-04-05
+P006,Office Chair Ergonomic,Furniture,450.00,S015,SKU-OC-006,Ergonomic mesh office chair with lumbar support,1,2022-09-12
+P007,Stainless Steel Bottle,Kitchenware,18.90,S020,SKU-SB-007,750ml double-wall stainless steel water bottle,1,2022-11-20
+P008,First Aid Kit,Safety,34.50,S011,SKU-FA-008,Industrial first aid kit 50 pieces,1,2022-06-30
+P009,Organic Green Tea,Food & Beverage,9.99,S007,SKU-GT-009,Premium organic green tea 100 bags,1,2022-10-15
+P010,Steel Toe Boots,Safety,89.95,S011,SKU-ST-010,Steel toe work boots size 42,1,2023-01-10
+P011,Cleaning Solvent 5L,Chemicals,42.00,S009,SKU-CS-011,Industrial cleaning solvent concentrate,1,2022-07-25
+P012,LED Panel Light 60W,Lighting,55.00,S018,SKU-LP-012,LED panel light 60W 6000K,1,2022-08-05
+P013,Warehouse Shelving Unit,Furniture,220.00,S017,SKU-WS-013,Heavy-duty steel shelving 2x1.5m,1,2022-03-14
+P014,Safety Helmet,Safety,15.75,S011,SKU-SH-014,ANSI certified safety helmet yellow,1,2023-02-18
+P015,Espresso Machine,Kitchenware,599.00,S020,SKU-EM-015,Professional espresso machine 15 bar,1,2022-12-01
+P016,Wool Blanket,Textiles,45.50,S010,SKU-WB-016,Premium wool blend blanket grey,1,2023-03-05
+P017,Water Filter System,Home & Garden,180.00,S012,SKU-WF-017,3-stage under-sink water filter system,1,2022-09-20
+P018,Delivery Truck Tire,Automotive,320.00,S013,SKU-TT-018,Heavy-duty truck tire 22.5",1,2022-11-08
+P019,Medical Gloves Box,Safety,12.00,S014,SKU-MG-019,Nitrile medical gloves box of 100,1,2023-04-10
+P020,Office Desk Lamp,Lighting,38.50,S018,SKU-OD-020,LED desk lamp with adjustable arm,1,2022-10-28
+P021,Protein Bar Box,Food & Beverage,24.00,S007,SKU-PB-021,Protein bars variety pack 12 units,1,2023-01-22
+P022,Circuit Breaker 63A,Electronics,75.00,S004,SKU-CB-022,63A 3-pole circuit breaker,1,2022-06-10
+P023,Storage Container 20L,Industrial,16.50,S005,SKU-SC-023,20L heavy-duty plastic storage container,1,2023-02-28
+P024,Fire Extinguisher 5kg,Safety,52.00,S011,SKU-FE-024,Dry powder fire extinguisher 5kg,1,2022-05-15
+P025,Sleeping Bag,Outdoor,65.00,S010,SKU-SB-025,3-season sleeping bag -5C,1,2023-04-25

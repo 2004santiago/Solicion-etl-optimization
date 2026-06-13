@@ -1,0 +1,21 @@
+supplier_id,company_name,contact_name,email,phone,address,city,country,tax_id,payment_terms,is_active
+S001,GlobalTech Industries,John Carter,jcarter@globaltech.com,+1-555-1001,100 Tech Park Dr,San Jose,USA,GTX-001,NET30,1
+S002,PacificRaw Materials,Sandra Mills,smills@pacificraw.com,+1-555-1002,200 Harbor Blvd,Seattle,USA,PRX-002,NET45,1
+S003,Atlas Logistics Inc,Peter Grant,pgrant@atlaslog.com,+1-555-1003,300 Commerce St,Chicago,USA,ATX-003,NET30,1
+S004,Quantum Components Ltd,Lisa Chen,lchen@quantumcomp.com,+1-555-1004,400 Innovation Way,Austin,USA,QCX-004,NET60,1
+S005,MetroPackaging Co,Kevin O'Neil,koneil@metropack.com,+1-555-1005,500 Industrial Ave,Detroit,USA,MPX-005,NET30,1
+S006,SilverLine Electronics,Emma Watson,ewatson@silverline.com,+1-555-1006,600 Circuit Rd,Boston,USA,SLX-006,NET45,1
+S007,GreenField Foods,Ryan Cooper,rcooper@greenfield.com,+1-555-1007,700 Farm Ln,Portland,USA,GFX-007,NET15,1
+S008,Apex Office Supplies,Nancy Drew,ndrew@apexoffice.com,+1-555-1008,800 Station Dr,Dallas,USA,AOX-008,NET30,1
+S009,Delta Chemical Solutions,Jorge Ramirez,jramirez@deltachem.com,+1-555-1009,900 Lab Blvd,Philadelphia,USA,DCX-009,NET45,1
+S010,Summit Textiles,Helen Park,hpark@summittext.com,+1-555-1010,1000 Weave St,Atlanta,USA,STX-010,NET30,1
+S011,Orion Safety Equipment,Mike Cross,mcross@orionsafety.com,+1-555-1011,1100 Shield Ave,Houston,USA,OSX-011,NET30,1
+S012,BlueStream Water Systems,Anna Blake,ablake@bluestream.com,+1-555-1012,1200 Aqua Dr,Denver,USA,BSX-012,NET60,1
+S013,  Falcon Transport ,Tom Reyes,treyes@falcont.com,+1-555-1013,1300 Freight Rd,Phoenix,USA,FTX-013,NET30,1
+S014,Pioneer Medical Supplies,Carlos Vega,cvega@pioneermed.com,+1-555-1014,1400 Health Pkwy,Miami,USA,PMX-014,NET45,1
+S015,Redwood Furniture,Rachel Green,rgreen@redwoodfurn.com,+1-555-1015,1500 Timber Ct,Portland,USA,RFX-015,NET30,1
+S016,Crystal Glassworks,,,+1-555-1016,1600 Glass St,Denver,USA,CGX-016,NET30,0
+S017,Titan Heavy Equipment,Frank Castle,fcastle@titanheavy.com,+1-555-1017,1700 Steel Way,Chicago,USA,THX-017,NET90,1
+S018,Aurora Lighting Co,Lily Adams,ladams@auroralight.com,+1-555-1018,1800 Lumen Blvd,Los Angeles,USA,ALX-018,NET30,1
+S019, Horizon Fuels ,Omar Hassan,ohassan@horizonf.com,+1-555-1019,1900 Energy Dr,Houston,USA,HFX-019,NET15,1
+S020,Crown Beverage Distributors,Grace Lee,glee@crownbev.com,+1-555-1020,2000 Bottle Ave,Nashville,USA,CBX-020,NET30,1

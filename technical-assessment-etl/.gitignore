@@ -1,3 +1,20 @@
 solution/*.*
 sqlserver_data/*
 .venv
+.env
+
+# Project Specific
+airflow.db
+logs/
+airflow/logs/
+airflow/airflow.db
+airflow/*.pid
+airflow/*.cfg
+airflow/*.err
+airflow/*.log
+airflow/plugins/
+output
+
+
+# Raw data files (large datasets, do not upload to GitHub)
+Data RAW/

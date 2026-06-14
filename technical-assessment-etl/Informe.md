@@ -98,11 +98,17 @@ solution/
         source_b/
         source_c/
       etl/
+        __init__.py
         config.py
+        db.py
         extract.py
+        source_a.py
+        source_b.py
+        source_c.py
+        transform_common.py
         transform.py
-        load.py
         quality.py
+        load.py
     output/
       quality_report.csv
       quality_report.json
